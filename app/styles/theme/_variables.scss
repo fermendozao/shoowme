@@ -1,0 +1,20 @@
+// Color palette
+
+$color-daisy-bush: #60249e;
+$color-blush-pink: #ff8aff;
+$color-torch-red: #ff004c;
+$color-white: #fff;
+$color-cherry-pie: #2f0557;
+$color-shamrock: #2ecc92;
+$color-blue-ribbon: #194ef4;
+
+
+
+//** Global text color on `<body>`.
+$text-color:            $color-white !default;
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+$font-family-sans-serif:  "Avenir Next LT Pro", Helvetica, Arial, sans-serif !default;

@@ -1,0 +1,81 @@
+$bg-odd: $color-daisy-bush;
+$bg-even: $color-cherry-pie;
+
+.section {
+  &.-full-height {
+    min-height: 100vh;
+    padding: 100px 0;
+  }
+
+  &.-hero {
+    position: relative;
+    .marketing {
+      position: absolute;
+      bottom: 15%;
+      left: 50%;
+      transform: translateX(-50%);
+
+      h4 {
+        font-size: 2em;
+      }
+    }
+  }
+
+  &.-highlights {
+    ul {
+      margin: 0;
+    }
+  }
+
+  &.-allies {
+    >.help-text {
+      color: $color-blush-pink;
+      font-size: 1.2em;
+    }
+
+    >.lead-text {
+      font-size: 2em;
+    }
+
+    >.btn {
+      margin-top: 60px;
+    }
+  }
+
+  &.-footer {
+    position: relative;
+
+    >.footer-bottom {
+      position: absolute;
+      bottom: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+
+      .footer-copy {
+        margin-top: -50px;
+        color: $color-blush-pink;
+        font-size: 1.3em;
+      }
+    }
+  }
+}
+
+
+.home {
+  .jumbotron {
+    h1 {
+      color: $color-torch-red;
+    }
+  }
+  section {
+    &:nth-child(even) {
+      background-color: $bg-even;
+    }
+
+    &:nth-child(odd) {
+      background-color: $bg-odd;
+    }
+  }
+
+
+}
