@@ -2,23 +2,13 @@ $bg-odd: $color-daisy-bush;
 $bg-even: $color-cherry-pie;
 
 .section {
+
   &.-full-height {
-    min-height: 100vh;
-    padding: 100px 0;
+    padding: 60px 15px;
   }
 
   &.-hero {
     position: relative;
-    .marketing {
-      position: absolute;
-      bottom: 15%;
-      left: 50%;
-      transform: translateX(-50%);
-
-      h4 {
-        font-size: 2em;
-      }
-    }
   }
 
   &.-highlights {
@@ -30,7 +20,7 @@ $bg-even: $color-cherry-pie;
   &.-allies {
     >.help-text {
       color: $color-blush-pink;
-      font-size: 1.2em;
+      font-size: 1em;
     }
 
     >.lead-text {
@@ -46,14 +36,57 @@ $bg-even: $color-cherry-pie;
     position: relative;
 
     >.footer-bottom {
+      >.footer-image {
+        display: none;
+      }
+
+      >.footer-copy {
+        color: $color-blush-pink;
+        margin-top: 20px;
+        font-size: 1em;
+      }
+    }
+  }
+
+
+  @media screen and (min-width: $screen-sm-max) {
+    &.-full-height {
+      padding: 100px 15px;
+      min-height: 100vh;
+    }
+
+    &.-hero {
+      .marketing {
+        position: absolute;
+        bottom: 15%;
+        left: 50%;
+        transform: translateX(-50%);
+
+        h4 {
+          font-size: 2em;
+        }
+      }
+    }
+
+    &.-allies {
+      >.help-text {
+        font-size: 1.2em;
+      }
+    }
+
+    &.-footer >.footer-bottom {
       position: absolute;
       bottom: 10%;
       left: 50%;
       transform: translateX(-50%);
 
-      .footer-copy {
+      >.footer-image {
+        margin-top: 100px;
+        display: block;
+      }
+
+      >.footer-copy {
         margin-top: -50px;
-        color: $color-blush-pink;
         font-size: 1.3em;
       }
     }
@@ -62,11 +95,16 @@ $bg-even: $color-cherry-pie;
 
 
 .home {
+  * .img-responsive {
+    margin: 0 auto;
+  }
+
   .jumbotron {
     h1 {
       color: $color-torch-red;
     }
   }
+
   section {
     &:nth-child(even) {
       background-color: $bg-even;

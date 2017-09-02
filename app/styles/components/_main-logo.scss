@@ -1,15 +1,21 @@
 .logo {
   width: 80%;
+  display: inline-block;
+
+  >img {
+    max-width: 100%;
+    margin: 0 auto;
+  }
 
   >.left-art, >.right-art {
     display: none;
   }
 
+
   @media screen and (min-width: $screen-sm-max) {
     position: relative;
     width: 600px;
     height: 250px;
-    display: inline-block;
 
     >.main-logo {
       z-index: 2;

@@ -8,6 +8,10 @@ $btn-torch-border: $color-torch-red;
 }
 
 .btn-big {
-  font-size: 1.8em;
+  font-size: 1.3em;
   padding: 8px 40px;
+
+  @media screen and (min-width: $screen-sm-max) {
+    font-size: 1.8em;
+  }
 }
