@@ -4,7 +4,11 @@ $btn-torch-border: $color-torch-red;
 
 .btn-torch {
   @include button-variant($btn-torch-color, $btn-torch-bg, $btn-torch-border);
-  box-shadow: -1px 1px 10px 6px rgba($color-torch-red, .3)
+  box-shadow: -1px 1px 10px 6px rgba($color-torch-red, .3);
+
+  &.-square {
+    border-radius: 0;
+  }
 }
 
 .btn-big {

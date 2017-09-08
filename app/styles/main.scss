@@ -8,6 +8,8 @@ $icon-font-path: '../fonts/';
 @import './components/type-wrapper';
 @import './components/social-icons';
 @import './components/main-logo';
+@import './components/team-members';
+@import './components/member-modal';
 
 @import './pages/home';
 
@@ -45,6 +47,11 @@ $icon-font-path: '../fonts/';
 }
 .marketing p + h4 {
   margin-top: 28px;
+}
+
+/* Helpers */
+._no-padding {
+  padding: 0;
 }
 
 
