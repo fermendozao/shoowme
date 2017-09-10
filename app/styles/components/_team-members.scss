@@ -1,0 +1,72 @@
+.team-members {
+  width: 900px;
+  height: 863px;
+  max-width: 100%;
+  background-size: 100%;
+  margin: 0 auto;
+  margin-top: 40px;
+  background-repeat: no-repeat;
+
+  > .member {
+    position: relative;
+  }
+
+  > .member .avatar {
+    width: 135px;
+    height: 135px;
+    cursor: pointer;
+  }
+
+  > .member > .card-info {
+    display: none;
+  }
+}
+
+@media screen and (max-width: $screen-sm-max) {
+  .team-members {
+    height: 480px;
+
+    > .member {
+      float: left;
+      width: 50%;
+      margin: 50px 0;
+    }
+  }
+}
+
+@media screen and (min-width: $screen-sm-max) {
+  .team-members {
+    background-image: url('../images/profiles-art.png');
+
+    > .member .avatar {
+      position: absolute;
+    }
+  }
+
+  .avatar {
+    &.-first {
+      top: 120px;
+      left: 70px;
+    }
+    &.-second {
+      top: 165px;
+      left: 370px;
+    }
+    &.-third {
+      top: 390px;
+      left: 30px;
+    }
+    &.-fourth {
+      top: 220px;
+      right: 30px;
+    }
+    &.-fifth {
+      top: 570px;
+      left: 245px;
+    }
+    &.-sixth {
+      top: 500px;
+      right: 80px;
+    }
+  }
+}
